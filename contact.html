@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARM Logics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <div class="overlay" id="navOverlay"></div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content contact-modal p-4">
+      <div class="modal-header border-0">
+        <h1 class="modal-title fw-bold text-orange " id="contactModalLabel">Let's Talk</h1>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="contactName" class="form-label text-muted">Your Name</label>
+            <input type="text" class="form-control custom-input" id="contactName" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label text-muted">Email Address</label>
+            <input type="email" class="form-control custom-input" id="contactEmail" placeholder="XYZ@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label text-muted">Your Message</label>
+            <textarea class="form-control custom-input" id="contactMessage" rows="4" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange w-100 mt-3">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <header class="container-fluid web-nav position-fixed  top-0">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <div class="row w-100 align-items-center">
+        <div class="col-sm-2 ">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/logo4.png" alt="logo" class="logo img-fluid object-fit-fill">
+          </a>
+        </div>
+        <div class="col-sm-10">
+          <div class="collapse navbar-collapse justify-content-end gap-4 fw-medium">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./services.html">Services</a>
+            <a class="nav-link" href="./project.html">Projects</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="btn btn-orange ms-3 fw-medium" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <header class="container-fluid mobile-nav py-3 px-4 position-fixed top-0">
+    <div class="row mobile-header-top ">
+      <div class="col-6 d-flex align-items-center">
+        <a class="navbar-toggler " onclick="toggleMobileNav()">
+          <i class="fas fa-bars"></i>
+        </a>
+        <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/logo4.png" alt="logo" class="logo img-fluid object-fit-fill ">
+          </a>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <a class="btn btn-orange get-started-mobile" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Get Started</a>
+      </div>
+    </div>
+    <div id="mobileNav">
+      <div class="row">
+        <div class="col-12">
+          <div class="close-btn" onclick="toggleMobileNav()">&times;</div>
+          <ul class="navbar-nav p-5">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="./project.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mt-5 contact">
+   
+<section id="contact" class="py-5">
+  <div class="container mt-5">
+    <div class="row mb-4">
+      <div class="col-lg-8">
+        <h1 class="fw-bold">Contact Us</h1>
+        <p class="text-muted fw-medium ">Have a question or need assistance? Fill out the form or contact us directly.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      
+      <div class="col-lg-7 col-11 mx-auto">
+        <form class="p-4 rounded-3 contact-form">
+          <div class="mb-3">
+            <label for="contactName" class="form-label text-muted">Your Name</label>
+            <input type="text" class="form-control custom-input" id="contactName" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label text-muted">Email Address</label>
+            <input type="email" class="form-control custom-input" id="contactEmail" placeholder="XYZ@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label text-muted">Your Message</label>
+            <textarea class="form-control custom-input" id="contactMessage" rows="4" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange">Send</button>
+        </form>
+      </div>
+
+      
+      <div class="col-lg-5 col-11 mx-auto">
+  <div class="bg-white p-4 rounded-3 shadow">
+    
+    <div class="d-flex align-items-start mb-4">
+      <div class="icon-box me-3 p-3 rounded-circle d-flex align-items-center justify-content-center">
+        <i class="fa-solid fa-envelope p-2"></i>
+      </div> 
+      <div>
+        <h6 class="fw-bold mb-1">Email</h6>
+        <p class="mb-0 text-muted">info@armlogics.com</p>
+      </div>
+    </div>
+
+    <hr class="border-1 border-top  border-orange opacity-100 my-3">
+    <div class="d-flex align-items-start">
+      <div class="icon-box me-3 p-3 rounded-circle d-flex align-items-center justify-content-center">
+        <i class="fa-solid fa-phone p-2"></i>
+      </div>
+      <div>
+        <h6 class="fw-bold mb-1">Phone</h6>
+        <p class="mb-0 text-muted">+123-456-7890</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="container-fluid ">
+  <div class="container py-3">
+    <div class="row align-items-center">
+    
+      <div class="col-sm-4 text-center text-sm-start mb-2 mb-sm-0">
+        <p class="mb-0">&copy; <span id="currentYear"></span> ARM Logics.</p>
+      </div>
+
+      <div class="col-sm-8 p-2">
+        <div class="d-flex justify-content-center  justify-content-sm-end  flex-wrap gap-4 fw-medium">
+          <a class="nav-link  p-0" href="./index.html">Home</a>
+          <a class="nav-link p-0" href="./about.html">About</a>
+          <a class="nav-link  p-0" href="./services.html">Services</a>
+          <a class="nav-link  p-0" href="./project.html">Projects</a>
+          <a class="nav-link  p-0" href="./contact.html">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js">
+  </script>
+</body>
+
+</html>
