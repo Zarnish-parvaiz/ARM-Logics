@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARM Logics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <div class="overlay" id="navOverlay"></div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true"> 
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content contact-modal p-4">
+      <div class="modal-header border-0">
+        <h1 class="modal-title fw-bold text-orange " id="contactModalLabel">Let's Talk</h1>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="contactName" class="form-label text-muted">Your Name</label>
+            <input type="text" class="form-control custom-input" id="contactName" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label text-muted">Email Address</label>
+            <input type="email" class="form-control custom-input" id="contactEmail" placeholder="XYZ@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label text-muted">Your Message</label>
+            <textarea class="form-control custom-input" id="contactMessage" rows="4" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange w-100 mt-3">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <header class="container-fluid web-nav position-fixed top-0 ">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <div class="row w-100 align-items-center">
+        <div class="col-sm-2 ">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/logo4.png" alt="logo" class="logo img-fluid object-fit-fill">
+          </a>
+        </div>
+        <div class="col-sm-10">
+          <div class="collapse navbar-collapse justify-content-end gap-4 fw-medium">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./services.html">Services</a>
+            <a class="nav-link" href="./project.html">Projects</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="btn btn-orange ms-3 fw-medium" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <header class="container-fluid mobile-nav py-3 px-4 position-fixed top-0">
+    <div class="row mobile-header-top ">
+      <div class="col-6 d-flex align-items-center">
+        <a class="navbar-toggler " onclick="toggleMobileNav()">
+          <i class="fas fa-bars"></i>
+        </a>
+        <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/logo4.png" alt="logo" class="logo img-fluid object-fit-fill ">
+          </a>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <a class="btn btn-orange get-started-mobile" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Get Started</a>
+      </div>
+    </div>
+    <div id="mobileNav">
+      <div class="row">
+        <div class="col-12">
+          <div class="close-btn" onclick="toggleMobileNav()">&times;</div>
+          <ul class="navbar-nav p-5">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="./project.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+<main >
+  <section class="container hero-section px-5 pt-5  ">
+  <div class="row align-items-center justify-content-between pt-5">
+    <div class="col-md-5  mb-4 mb-md-0">
+      <h1 class="fw-bold mb-3">We Build & Launch <br> Products That Scale</h1>
+      <p class="mb-3 fw-semibold">
+        We provide modern web solutions, specializing in full <br>
+        stack development using Laravel, Vue, and React.
+      </p>
+      <a class="btn btn-orange fw-medium" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Get Started</a>
+    </div>
+
+    <div class="col-md-7 text-center ">
+      <img src="./assets/images/chart2.png" alt="chart icon" class="img-fluid object-fit-cover" style="width: 85%;">
+    </div>
+  </div>
+</section>
+
+
+  <section class="container py-4 services-section mb-5">
+    <h2 class="text-center mb-5 fw-bold">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+        <div class="service-card text-center py-4 px-2 shadow rounded-4 ">
+          <i class="fa-solid fa-briefcase"></i>
+          <h6>Web Development</h6>
+          <p>We build fast, secure, and scalable web apps using Laravel, Vue, and React.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+        <div class="service-card text-center py-4 px-2 shadow rounded-4">
+          <i class="fa-solid fa-user-group"></i>
+          <h6>Team Augmentation</h6>
+          <p>Add expert Laravel/Vue developers to your team for ongoing projects.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+        <div class="service-card text-center py-4 px-2 shadow rounded-4">
+          <i class="fa-solid fa-gear"></i>
+          <h6>Custom SaaS Solutions</h6>
+          <p>Build your own SaaS product with end-to-end architecture and support.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+        <div class="service-card text-center py-4 px-2 shadow rounded-4">
+          <i class="fa-solid fa-arrow-up-right-dots"></i>
+          <h6>Technical Consulting</h6>
+          <p>Get guidance on architecture, scaling strategy, and team planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid about-section py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 ">
+          <h2 class="my-3 fw-bold">About ARM Logics</h2>
+      <p class="fw-semibold">Over 8 years of experience building modern web applications, long-term team augmentation, and scalable software solutions.</p>
+      <span class="badge  p-2 me-2 ">Experience</span>
+      <span class="badge  p-2 me-2">Long-term</span>
+      <span class="badge  p-2 ">Team</span>
+        </div>
+
+        <div class="col-sm-6">
+           <div class="my-4">
+        <div class="p-3 bg-white rounded-4 shadow-sm mb-3">
+          <h6 class="fw-bold">Project One</h6>
+          <p>Project development - Experimentation</p>
+          <span class="badge p-2 me-2 ">Laravel</span>
+          <span class="badge p-2 me-2">Vue</span>
+        </div>
+        <div class="p-3 bg-white rounded-4 shadow-sm">
+          <h6 class="fw-bold">Project Two</h6>
+          <p>Project management - Automation</p>
+          <span class="badge p-2 me-2 ">Next</span>
+          <span class="badge p-2 me-2 ">MySQL</span>
+        </div>
+      </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+<section class="container py-5 mb-5">
+  <div class="row testimonial align-items-center justify-content-between">
+    
+    <div class="col-sm-5 mb-4 col-10 mx-auto mb-sm-0">
+      <h3 class="fw-bold">Testimonials</h3>
+      <div class="row">
+        <div class="col-1 d-flex justify-content-center"><i class="fa-solid fa-quote-right"></i></div>
+      <div class="col-11 d-flex justify-content-start"> <p><strong> ARM Logics</strong> exceeded our expectations with their expertise and professionalism.</p></div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-10 mx-auto testimonial-card p-4 rounded shadow-sm">
+      <p><strong>"ARM Logics exceeded our expectations with their expertise and professionalism."</strong></p>
+      <p class="mb-0 fw-medium">John Doe</p>
+    </div>
+  </div>
+</section>
+<section class="container-fluid p-4 cta ">
+  <div class="container ">
+    <div class="row ">
+    <div class="col-sm-6 mt-2">
+      <h3 class="fw-bold"> Let's Talk About Your Idea</h3>
+    </div>
+    <div class="col-sm-6 col-5 mx-auto d-flex mt-2 justify-content-end ">
+       <button class="btn px-3 fw-medium" data-bs-toggle="modal" data-bs-target="#contactModal" > Contact Us </button>
+    </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="container-fluid ">
+  <div class="container py-3">
+    <div class="row align-items-center">
+    
+      <div class="col-sm-4 text-center text-sm-start mb-2 mb-sm-0">
+        <p class="mb-0">&copy; <span id="currentYear"></span> ARM Logics.</p>
+      </div>
+
+      <div class="col-sm-8 p-2">
+        <div class="d-flex justify-content-center  justify-content-sm-end  flex-wrap gap-4 fw-medium">
+          <a class="nav-link  p-0" href="./index.html">Home</a>
+          <a class="nav-link p-0" href="./about.html">About</a>
+          <a class="nav-link  p-0" href="./services.html">Services</a>
+          <a class="nav-link  p-0" href="./project.html">Projects</a>
+          <a class="nav-link  p-0" href="./contact.html">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js">
+  </script>
+</body>
+
+</html>
