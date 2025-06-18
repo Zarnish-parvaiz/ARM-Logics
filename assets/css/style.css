@@ -1,0 +1,169 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+  background-color: white;
+}
+p, a{
+  color: #58595a;
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn-orange {
+  background-color: #ff8521;
+  color: white;
+}
+.btn-orange:hover{
+    color: #ff8521;
+}
+.web-nav {
+  display: flex;
+}
+.mobile-nav {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-section h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.service-card i,
+.testimonial i,
+.icon i,
+.services i {
+  color: #ff8521;
+  font-size: 30px;
+}
+.service-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.service-card p,
+.about-section p{
+  font-size: 1rem;
+  color:#58595a;
+}
+.service-card,
+.about-section,
+.testimonial-card
+ {
+    background-color: #fff5ec;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.badge{
+    color: #ff8521;
+    background-color: #fbe7d1;
+}
+.testimonial p {
+  font-size: 1rem;
+  color: #333;
+}
+.cta {
+    background-color: #ff8521;
+    color:white;
+}
+.cta button,
+footer p {
+    background-color: white;
+    color: #ff8521;
+    cursor: pointer;
+}
+.text-orange,
+.mission h4,
+.vision h4,
+.time-line h3 {
+  color: #ff6a00;
+}
+.contact-modal {
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+.custom-input {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  font-size: 15px;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+}
+.custom-input:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.25);
+  background-color: white;
+}
+.about h1{
+  font-size: 70px;
+  color:  #5b5d5e;
+}
+.about h2{
+  color: #5b5d5e;
+  font-size: 35px;
+}
+.mission{
+  background-color: #FFEFDD;
+}
+.vision{
+  background-color: #FFFAF4;
+}
+.story {
+  background-color: #ff8521;
+}
+.story i{
+  font-size: 50px;
+}
+.time-line{
+  border: 2px solid #ff8521;
+}
+.project h1,
+.contact h1,
+.services h1{
+  font-size: 50px;
+}
+.p-badge {
+  background-color:#FFEFDD;
+  padding: 3px 10px;
+  color: rgb(129, 73, 73);
+  border-radius: 5px;
+}
+.project-img-placeholder {
+  height: 150px;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+}
+.card-title {
+  font-size: 1.1rem;
+}
+.card i{
+  font-size: 30px;
+  color: #5b5d5e;
+}
+.card p{
+  color:white; 
+}
+.contact-form {
+  background-color: #FFEFDD;
+  border: 1px solid #fcd9a1;
+}
+.contact i{
+  color: white;
+  background-color: #ff8521;
+}
+
+
+
+
+
